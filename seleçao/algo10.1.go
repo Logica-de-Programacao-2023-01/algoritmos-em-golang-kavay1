@@ -3,7 +3,6 @@ package main
 import "fmt"
 
 func main() {
-
 	var idade int
 
 	fmt.Println("Escreva sua idade:")
