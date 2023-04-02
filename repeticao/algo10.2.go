@@ -2,20 +2,24 @@ package main
 
 import "fmt"
 
-func main() { //Faça um algoritmo que leia vários números inteiros e mostre a média aritmética entre eles. A leitura deve ser interrompida quando for lido o valor zero.
-	var num float64
-	var soma float64
-	var div float64
+func main() {
+
+	var num int
+	max := 0
+
+	fmt.Println("Digite uma sequencia de números: ")
 
 	for {
-		fmt.Println("Digite um número:")
 		fmt.Scan(&num)
 		if num == 0 {
 			break
 		}
-		soma += num
-		div++
+		if num > max {
+			max = num
+		}
+
 	}
 
-	fmt.Println("A média é:", soma/div)
+	fmt.Println("O maior número é: ", max)
+
 }
